@@ -7,7 +7,7 @@
 Please refer to `requirements.txt`. Assuming you have python, you can install the dependencies using:
 
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Running the Program
