@@ -1,0 +1,5 @@
+GDSC_GENE_EXPRESSION = 'gdsc_rma_gene_expr.csv'
+GDSC_lnIC50 = 'gdsc_lnic50.csv'
+TCGA_GENE_EXPRESSION = 'labeled_tcga_gene_expr.csv'
+TCGA_MEANS = 'tcga_gex_mean.csv'
+TCGA_STDS = 'tcga_gex_stdev.csv'
