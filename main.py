@@ -7,7 +7,7 @@ from explainer import find_genes
 def main(FLAGS):
 
     # Phase 1
-    if FLAGS.mode == 'full':
+    if FLAGS.mode in ['full', 'no-explain']:
         # find hyperparameters using 5-fold CV
         hyperparams = main_cv.main(FLAGS)
 

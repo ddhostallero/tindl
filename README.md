@@ -10,6 +10,10 @@ Please refer to `requirements.txt`. Assuming you have python, you can install th
 pip install -r requirements.txt
 ```
 
+## Data
+The preprocessed data is available [here](https://mcgill-my.sharepoint.com/:u:/g/personal/david_hostallero_mail_mcgill_ca/EYFus5ZMkWlMk72R52Fw5BsBzXfbva8ZPSICHea8tbKBlQ?e=AY7ueF)
+To use this data, extract in this directory (it will create `data` directory) or specify the `--dataroot` parameter when running (see Additional parameters)
+
 ## Running the Program
 
 To run the entire pipeline for a single drug (tamoxifen in this example)
@@ -25,7 +29,7 @@ python main.py --drug=tamoxifen
 - `--mode`: the program mode. `full` means to run the entire pipeline. `custom` only runs the training and testing using hyperparameters you defined. `explain-only` only runs the explainer (assumes trained model is given). `no-explain` only runs the hyperparameter selection and the testing.
 - `--drug`: the drug you want to train/explain (default: tamoxifen)
 - `--seed`: the seed number for 5-fold CV (default: 1)
-- `--max_epoch`: maximum number of epochs for 5-fold CV; fixed epoch if mode is `custom` (default: 1000)
+- `--max_epoch`: maximum number of epochs (default: 1000)
 - `--lr`: learning rate (default: 1e-4)
 - `--batch_size`: size of minibatches for training (default: 128)
 - `--ensemble`: number of models in the ensemble (default: 10)
